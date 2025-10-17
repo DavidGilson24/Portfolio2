@@ -10,29 +10,34 @@ export default function Process() {
   const steps = [
     {
       number: "01",
-      title: "Discovery",
-      description: "We analyze your needs, goals, and target audience to establish a solid foundation for the project.",
+      image: "/exps/images.png",
+      title: "Vrije Universiteit - Netherlands",
+      description: "BSc Computer Science - Object oriented Programming, Computer Architecture, Databases, Software Engineering, Operating Systems, Algorithms & Structures",
     },
     {
       number: "02",
-      title: "Strategy",
-      description: "We develop a comprehensive plan that aligns with your business objectives and user expectations.",
+      image: "/exps/Capisoft.png",
+      title: "Full-Stack Software Developer - Amsterdam",
+      description: "Full-Stack development of one of the first Dutch finance apps to automatically submit tax declarations @ Capisoft",
     },
     {
       number: "03",
-      title: "Design",
-      description: "We create minimalist, brutalist designs that focus on functionality and user experience.",
+      image: "/exps/Surrey.jpeg",
+      title: "University of Surrey - UK",
+      description:
+        "MSc Astronautics & Space Engineering - Astrodynamics, Space Systems, Satellite Comms., Remote Sensing, Launch Vehicles & Propulsion, Space Avionics, Space Environment & Protection",
     },
     {
       number: "04",
-      title: "Development",
-      description:
-        "We build your digital product using modern technologies and best practices for optimal performance.",
+      image: "/exps/ESA.png",
+      title: "ESA Space Debris Training Course",
+      description: "Completed an intensive course on debris mitigation and re-entry, applying ESA’s DRAMA and MASTER tools for collision avoidance and de-orbiting analysis",
     },
     {
       number: "05",
-      title: "Launch",
-      description: "We deploy your project and ensure everything works flawlessly across all platforms and devices.",
+      image: "/exps/Peryton.png",
+      title: "Satellite Design Competition - UKSEDS",
+      description: "Payload & Systems Engineer Lead for SDC 2026, designing a 3U CubeSat ",
     },
   ]
 
@@ -51,9 +56,7 @@ export default function Process() {
             <div className="text-xs uppercase tracking-widest text-white/80">How We Work</div>
           </div>
           <h2 className="text-4xl md:text-5xl font-bold tracking-tighter text-white">
-            Our Process
-            <br />
-            <span className="text-white/90">Step by Step</span>
+            Experience and Education
           </h2>
         </motion.div>
 
@@ -73,9 +76,7 @@ export default function Process() {
             >
               <div className={`flex-1 ${index % 2 === 0 ? "md:text-right" : ""} pl-24 md:pl-0`}>
                 {/* Increase contrast of step numbers from 10% to 40% */}
-                <div className={`text-5xl md:text-7xl font-bold text-white/40 mb-4 ${index % 2 === 0 ? "md:text-right" : ""}`}>
-                  {step.number}
-                </div>
+                {/* number removed from text area - image will be shown inside the square only */}
                 <h3 className={`text-2xl font-bold mb-2 text-white ${index % 2 === 0 ? "md:text-right" : ""}`}>
                   {step.title}
                 </h3>
@@ -89,8 +90,8 @@ export default function Process() {
 
               <div className="relative flex items-center justify-center z-10 absolute-vertical-center md:static">
                 {/* Increase border contrast from 30% to 40% */}
-                <div className="w-20 h-20 border-2 border-white/40 flex items-center justify-center bg-[#0a0a0a] group-hover:border-white/60 transition-all duration-300">
-                  <div className="text-xl font-bold text-white">{step.number}</div>
+                <div className="w-20 h-20 border-2 border-white/40 flex items-center justify-center bg-[#0a0a0a] group-hover:border-white/60 transition-all duration-300 overflow-hidden">
+                  <img src={step.image ?? "/exps/images.png"} alt={`${step.title} step`} className="w-full h-full object-cover" />
                 </div>
               </div>
 

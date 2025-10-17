@@ -35,7 +35,7 @@ export default function Features() {
       icon: <IonIcon icon={rocketOutline} className="w-7 h-7"  />,
       title: "Other Skills",
       description:
-        "Electrical Engineering Fundamentals, S/C System Design, Hardware Software Integration, Satellite Communications, Soldering",
+        "Electrical Engineering, S/C Systems, Hardware Software Integration, Satellite Communications, Soldering, Astrodynamics",
     },
     {
       icon: <IonIcon icon={languageOutline} className="w-7 h-7" />,

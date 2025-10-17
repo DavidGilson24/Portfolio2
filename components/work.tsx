@@ -10,6 +10,12 @@ export default function Work() {
 
   const projects = [
     {
+      title: "Multistage Launch Vehicle Simulation and Payload Mass Fraction Optimization",
+      subtitle: "Designed and simulated a 2-stage small-lift launch vehicle from ascent to orbit insertion using event sequencing for burns, staging, and payload deployment",
+      image: "/works/GMAT.png?height=600&width=800",
+      year: "2024",
+    },
+    {
       title: "Personal CubeSat Sensor Subsystem",
       subtitle: "A functional CubeSat subsystem built with and Arduino board and various sensors such as Altitude, Atmospheric Pressure, Temperature and Humidity, Real-Time Clock, Triple-Axis Magnetometer Gyroscope/Accelerometer for Orientation Sensing",
       image: "/works/ProtoShield.png?height=600&width=800",
@@ -17,7 +23,7 @@ export default function Work() {
       year: "2025",
     },
     {
-      title: "SOLAR ATLAS",
+      title: "SOLAR ATLAS - Solar System Simulator",
       subtitle: " 3D model of the solar system designed to reflect a 1:10 (time and space) scale of planetary orbits, rotation, and distances, simulating the dynamics of orbital mechanics, made using Unreal Engine 5",
       image: "/works/SolarAtlas.png?height=600&width=800",
       year: "2023",
@@ -26,12 +32,6 @@ export default function Work() {
       title: "Space Index",
       subtitle: "E-learning website that provides information about our Solar System and human made objects in space, including animations and ease of interaction. Made using vanilla JS, HTML/CSS",
       image: "/works/SpaceIndex.png?height=600&width=800",
-      year: "2024",
-    },
-    {
-      title: "Quasar",
-      subtitle: "Quasar is an interactive, intelligent chatbot designed to write an astronomy based essay and output it as a pdf. Utilizing OpenAI's API.",
-      image: "/works/Quasar.jpg?height=600&width=800",
       year: "2024",
     },
   ]
